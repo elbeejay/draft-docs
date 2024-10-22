@@ -438,11 +438,50 @@ document.write(`
                   
   <section id="project-background">
 <h1><span class="section-number">4. </span>Project Background<a class="headerlink" href="#project-background" title="Permalink to this heading">#</a></h1>
-<!-- Floating Table of Contents -->
+<p>/* Style the TOC container */
+.toc {
+position: fixed;
+top: 100px;
+right: 20px;
+background-color: #f9f9f9;
+padding: 15px;
+border: 1px solid #ddd;
+width: 250px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+font-family: Arial, sans-serif;
+}
+.toc ul {
+list-style-type: none;
+padding-left: 0;
+}
+.toc ul li {
+margin: 10px 0;
+}
+.toc a {
+text-decoration: none;
+color: #007bff;
+}
+.toc a:hover {
+text-decoration: underline;
+}
+.toc h3 {
+font-size: 18px;
+margin-bottom: 10px;
+}
+.toc ul li::before {
+content: “►”;
+color: #007bff;
+margin-right: 5px;
+}
+</style></p>
+</head>
+<body>
+  <!-- Floating Table of Contents -->
   <div class="toc">
     <h3>Contents</h3>
     <ul>
       <li><a href="#introduction">Introduction</a></li>
+      <li><a href="#project-scope">Project Scope</a></li>
       <li><a href="#novel-analytical-framework">1. Novel Analytical Framework</a></li>
       <li><a href="#geest-tool">2. Gender Enabling Environments Tool (GEEST)</a></li>
       <li><a href="#saint-lucia-case">3. Study Case: Saint Lucia</a></li>
@@ -450,6 +489,19 @@ document.write(`
       <li><a href="#geospatial-databases">5. Geospatial Databases</a></li>
     </ul>
   </div>
+  <!-- Main Content -->
+  <h2 id="introduction">Introduction</h2>
+  <p>This is the introduction section...</p>
+  <h2 id="project-scope">Project Scope</h2>
+  <ul>
+    <li><h3 id="novel-analytical-framework">1. Novel Analytical Framework</h3></li>
+    <li><h3 id="geest-tool">2. Gender Enabling Environments Tool (GEEST)</h3></li>
+    <li><h3 id="saint-lucia-case">3. Study Case: Saint Lucia</h3></li>
+    <li><h3 id="data-gap-assessment">4. Gender Spatial Data Gap Assessment</h3></li>
+    <li><h3 id="geospatial-databases">5. Geospatial Databases</h3></li>
+  </ul>
+</body>
+</html>
 <h2 id="introduction">Introduction</h2>
 <p align="justify">  
   With support from the <a href="https://www.worldbank.org/en/topic/climatechange/brief/canada-world-bank-clean-energy-and-forests-climate-facility">Canada Clean Energy and Forest Climate Facility (CCEFCFy)</a>, the <a href="https://worldbank.github.io/GOST">Geospatial Operational Support Team (GOST, DECSC)</a> launched the project "Geospatial Assessment of Women Employment and Business Opportunities in the Renewable Energy Sector" in <a href="#footnote1" id="ref1">SIDS<sup>1</sup></a>. The project aims to propose a novel methodology and generate a geospatial open-source tool for mapping the enabling environments for women in a country that can inform new energy projects to support the advancement of women's economic empowerment in <a href="#footnote1" id="ref1">SIDS<sup>1</sup></a> while contributing to closing gender gaps in employment in the RE sector.
